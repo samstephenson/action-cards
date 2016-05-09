@@ -1,0 +1,19 @@
+<header class="masthead">
+    
+     <a href="{{ site.baseurl }}/" title="Browse"><img alt="The ninety five percent" src="{{ site.baseurl }}/images/logo.svg" width="40" height="40"></a>
+    
+    <nav>
+	    <a href="{{ site.baseurl }}/" title="Browse" {% if page.url == '/' %} class="active"{% endif %}>
+	    	Browse
+	    </a>
+	    <a href="{{ site.baseurl }}/use.html" title="Use" {% if page.url == '/use.html' %} class="active"{% endif %}>
+	    	Buy the Kit
+	    </a>
+    </nav>
+
+    <a 
+    	href="{{ site.baseurl }}/about.html" title="about" class="about {% if page.url == '/about.html' %}active{% endif %}">
+    	?
+    </a>
+
+</header>
