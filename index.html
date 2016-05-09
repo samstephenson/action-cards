@@ -14,7 +14,7 @@ title: Home
 <div class="grid container wide">
   {% for principle in site.principles %}
   <div class="col card card-style">
-    <a href="{{ principle.url }}" title="{{ principle.title }}">
+    <a href="{{ site.baseurl }}{{ principle.url }}" title="{{ principle.title }}">
       <img src="{{ principle.image }}">
         <h2>{{ principle.title }}</h2>
     </a>
