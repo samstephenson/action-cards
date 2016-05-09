@@ -1,17 +1,17 @@
 # Permalinks
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
-relative_permalinks: true
+permalink:           none
 
 # Setup
 title:               Poole
 tagline:             The Jekyll Butler
-url:                 http://getpoole.com
-paginate:            1
+url:                 http://actioncards.io
 baseurl:             ""
 
 # Assets
+
+
 #
 # We specify the directory for Jekyll so we can use @imports.
 sass:
@@ -28,3 +28,7 @@ author:
 version:             2.0.0
 github:
   repo:              https://github.com/poole/poole
+
+collections:
+  principles:
+    output: true

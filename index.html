@@ -3,31 +3,21 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<div class="container content">
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+    <h1>Influences and Irrationalities of the Human Mind</h1>
+    <p class="center">A collection of 33 heuristics, recognised by psychology, that affect our unconscious deicision making.</p>
 
-    {{ post.content }}
-  </article>
-  {% endfor %}
 </div>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
+
+<div class="grid container wide">
+  {% for principle in site.principles %}
+  <div class="col card card-style">
+    <a href="{{ principle.url }}" title="{{ principle.title }}">
+      <img src="{{ principle.image }}">
+        <h2>{{ principle.title }}</h2>
+    </a>
+  </div>
+  {% endfor %}
 </div>
