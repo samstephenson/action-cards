@@ -7,7 +7,7 @@ permalink:           none
 title:               Poole
 tagline:             The Jekyll Butler
 url:                 http://actioncards.io
-baseurl:             ""
+baseurl:            "/action-cards/"
 
 # Assets
 
