@@ -4,15 +4,15 @@
 
 .masthead {
   background: white;
-  margin-bottom: 4rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   text-align: center;
   height: 3rem;
-  padding: 0 1rem;
+  padding: 0 1rem 0 .5rem;
   border-bottom: 2px solid white;
+  z-index: 10;
 
   a {
     color: $body-color;
@@ -66,4 +66,18 @@ nav a {
   display: inline-block;
   width: 8rem;
   padding: 1.1rem 0 0.9rem;
+}
+
+a.logo {
+
+  display: flex;
+  align-items: center;
+  color: #FC7554;
+  margin-right: -200px;
+
+  h1 { 
+    color: #FC7554;
+    font-size: 0.9rem;
+    margin: 0;
+  }
 }

@@ -13,7 +13,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-weight: medium;
   font-size: 2rem;
-  text-align: center;
   margin-bottom: 1.5rem;
 }
 
@@ -121,4 +120,27 @@ a[href^="#fnref:"] {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
+}
+
+input {
+  font-size: 1rem;
+  padding: .5rem;
+  display: inline-block;
+  margin: 0 1rem 0 0;
+}
+
+.form-section {
+  display: flex;
+  margin: 1rem 0;
+  }
+
+button {
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    box-shadow: none;
+    background: $link-color;
+    border: none;
+    color: white;
+    cursor: pointer;
 }

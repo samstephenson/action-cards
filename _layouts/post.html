@@ -4,9 +4,11 @@ layout: default
 
 <div class="container content card">
 
-  <article class="post">
+  <article class="post" style="background-image: url({{ page.image }})">
     <h1 class="post-title">{{ page.title }}</h1>
     {{ content }}
   </article>
 
 </div>
+
+{% include card-grid.html %}

@@ -6,8 +6,7 @@
   max-width: 38rem;
   padding-left:  1.5rem;
   padding-right: 1.5rem;
-  margin-left:  auto;
-  margin-right: auto;
+  margin: 4rem auto;
 }
 
 .wide {
@@ -15,7 +14,10 @@
 }
 
 .post {
-	padding: 2rem 1rem;
+  padding: 2rem 1rem;
+  background: no-repeat;
+  background-size:cover;
+  -webkit-background-origin:border;
 }
 
 footer {
